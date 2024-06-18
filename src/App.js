@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './components/navbar';
+import Header from './components/header';
+import About from './components/about';
+import Services from './components/services';
+import Testimonial from './components/testimonial';
+import Information from './components/infomation';
+import Partnership from './components/partnership';
+import Product from './components/products';
+import Perks from './components/perks';
+import Contact from './components/contact';
+import Programme from './components/programme';
+import Footer from './components/footer';
+
+// const meta = {
+//   title: 'Light Heights',
+//   description: 'I am a description, and I can create multiple tags',
+//   meta: {
+//       charset: 'utf-8',
+//       name: {
+//           keywords: 'react,meta,document,html,tags',
+//           content: 'width=device-width, initial-scale=1.0'
+//       }
+//   }}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Header/>
+      <About/>
+      <Services/>
+      <Testimonial/>
+      <Information/>
+      <Partnership/>
+      <Product/>
+      <Perks/>
+      <Programme/>
+      <Contact/>
+      <Footer/>
+    </>
   );
 }
 
