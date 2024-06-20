@@ -12,6 +12,7 @@ import Contact from './components/contact';
 import Programme from './components/programme';
 import Footer from './components/footer';
 
+
 // const meta = {
 //   title: 'Light Heights',
 //   description: 'I am a description, and I can create multiple tags',
@@ -24,6 +25,8 @@ import Footer from './components/footer';
 //   }}
 
 function App() {
+
+     
   return (
     <>
       <Navbar/>
@@ -36,7 +39,7 @@ function App() {
       <Product/>
       <Perks/>
       <Programme/>
-      <Contact/>
+      {/* <Contact/> */}
       <Footer/>
     </>
   );

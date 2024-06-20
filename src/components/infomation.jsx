@@ -3,6 +3,8 @@ import img1 from '../images/Vector_1.svg'
 import img2 from '../images/Vector_2.svg'
 import img3 from '../images/Vector_3.svg'
 import img4 from '../images/Vector_4.svg'
+import { motion } from "framer-motion";
+import { h2 } from "./framervariants";
 /** @jsxImportSource @emotion/react */
 
 const Information = () => {
@@ -11,10 +13,14 @@ const Information = () => {
        <div css={noteCss.fixedNote}>
         <p>the light heights edge </p>
       </div>
-      <main css={servicesCss.main }>
+      <motion.main 
+       initial='hidden'
+       whileInView='visible'
+       variants={h2}
+       css={servicesCss.main }>
         <h1>why choose us</h1>
         <p>Wondering why you should choose  Light Heights and not any of the many international education and  immigration agencies in Nigeria? Here are the reasons why:</p>
-      </main>
+      </motion.main>
       <article css={informationCss.article}>
         
           <figure css={informationCss.figure}>

@@ -1,12 +1,18 @@
 import { headerCss, partnershipCss } from "../styles";
 import hyphen from '../images/blackline.svg'
 import img1 from '../images/photo_5.png'
+import { motion } from "framer-motion";
+import { h2 } from "./framervariants";
 /** @jsxImportSource @emotion/react */
 
 
 const Partnership = () => {
   return (
-    <div css={partnershipCss.container}>
+    <motion.div 
+    initial='hidden'
+    whileInView='visible'
+    variants={h2}
+    css={partnershipCss.container}>
       <section css={partnershipCss.section}> 
       <small css={headerCss.small}>
       <img src={hyphen} alt="hyphen"/>Your are in good hands</small>
@@ -21,7 +27,7 @@ const Partnership = () => {
         alt="head banner"
         src={img1} />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,11 +1,17 @@
 
-import { aboutCss, noteCss } from "../styles";
+import { aboutCss } from "../styles";
+import { motion } from "framer-motion";
+import { card } from "./framervariants";
 import Line from '../images/Line 1.svg'
 /** @jsxImportSource @emotion/react */
 
 const Perks = () => {
   return (
-    <section css={aboutCss.container}>
+    <motion.section 
+    initial='hidden'
+    whileInView='visible'
+    variants={card}
+    css={aboutCss.container}>
       <article css={aboutCss.article}>
        <div css={aboutCss.Div}>
        <span css={aboutCss.span}></span>
@@ -32,7 +38,7 @@ const Perks = () => {
         <p>With Light Heights guiding you all the way, success awaits you!</p>
       </div>
       </article>
-    </section>
+    </motion.section>
   )
 }
 
